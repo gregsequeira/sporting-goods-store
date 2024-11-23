@@ -1,0 +1,82 @@
+form {
+  max-width: 400px;
+  margin: 35px auto;
+  padding: 20px;
+  background-color: snow;
+  border: 1px solid gainsboro;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px black;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: darkslategray;
+}
+
+input[type="text"],
+input[type="username"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0 20px;
+  border: 1px solid silver;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+input[type="text"]:focus,
+input[type="username"]:focus,
+input[type="password"]:focus {
+  border-color: dodgerblue;
+  outline: none;
+  box-shadow: 0 0 5px royalblue;
+}
+
+.warningMessage {
+  color: red;
+  font-size: 12px;
+  margin-top: -15px;
+  margin-bottom: 15px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: lightseagreen;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+  background-color: lightseagreen;
+  color: dimgray;
+}
+
+p {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: darkslategray;
+}
+
+.regButton {
+  color: dodgerblue;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.regButton:hover {
+  color: green;
+  text-decoration: underline;
+}

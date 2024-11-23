@@ -1,0 +1,41 @@
+nav {
+  font-weight: bold;
+  background-color: darkgreen;
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  margin: 0 15px;
+  font-size: 18px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.header-username {
+  font-size: 16px;
+  font-style: italic;
+  margin-right: 20px;
+}
+
+.headerLogout {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: white;
+  color: darkgreen;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.headerLogout:hover {
+  background-color: lightgreen;
+}

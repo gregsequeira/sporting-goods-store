@@ -13,20 +13,27 @@ export default function Header() {
   };
 
   return (
-    <nav>
-      <Link to="/">HOME</Link>
-      <Link to="/products">PRODUCTS</Link>
-      <Link to="/about">ABOUT</Link>
-      {isLoggedIn ? (
-        <>
-          <span className="headerUsername">{userDetails?.username}</span>
-          <button className="headerLogout" onClick={handleLogout}>
-            LOGOUT
-          </button>
-        </>
-      ) : (
-        <Link to="/">LOGIN</Link>
-      )}
+    <nav className="headerNav">
+      <div className="headerLinks">
+        <Link to="/">HOME</Link>
+        <Link to="/products">PRODUCTS</Link>
+        <Link to="/about">ABOUT</Link>
+        {isLoggedIn && <Link to="/cart">CART</Link>}
+      </div>
+      <div className="headerUserSection">
+        {isLoggedIn ? (
+          <>
+            <span className="headerUsername">
+              Welcome, {userDetails?.username}
+            </span>
+            <button className="headerLogout" onClick={handleLogout}>
+              LOGOUT
+            </button>
+          </>
+        ) : (
+          <Link to="/">LOGIN</Link>
+        )}
+      </div>
     </nav>
   );
 }

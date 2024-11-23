@@ -1,4 +1,4 @@
-nav {
+.headerNav {
   font-weight: bold;
   background-color: darkgreen;
   color: white;
@@ -8,21 +8,32 @@ nav {
   justify-content: space-between;
 }
 
-nav a {
+.headerLinks {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex: 1;
+}
+
+.headerLinks a {
   text-decoration: none;
   color: white;
-  margin: 0 15px;
   font-size: 18px;
 }
 
-nav a:hover {
+.headerLinks a:hover {
   text-decoration: underline;
 }
 
-.header-username {
+.headerUserSection {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.headerUsername {
   font-size: 16px;
   font-style: italic;
-  margin-right: 20px;
 }
 
 .headerLogout {

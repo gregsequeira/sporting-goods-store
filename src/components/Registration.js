@@ -35,7 +35,7 @@ const RegistrationForm = () => {
       .required("Required"),
   });
 
-  // Save registration details
+  // Form submission handler
   const handleRegistration = (values) => {
     dispatch(register(values));
     navigate("/");

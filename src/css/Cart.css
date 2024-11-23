@@ -1,0 +1,180 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: gainsboro;
+}
+
+.cartContainer {
+  padding: 20px;
+}
+
+.cartContainer h1 {
+  font-size: 28px;
+  text-align: center;
+  color: darkslategray;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.cartItemCard {
+  border: 1px solid whitesmoke;
+  border-radius: 8px;
+  background-color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cartItemCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px black;
+}
+
+.cartItemImage {
+  height: 150px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.cartItemActions button {
+  font-size: 14px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.cartItemActions button:hover {
+  opacity: 0.8;
+}
+
+.cartItemActions .btn-success {
+  background-color: green;
+  color: white;
+}
+
+.cartItemActions .btn-success:hover {
+  background-color: limegreen;
+}
+
+.cartItemActions .btn-danger {
+  background-color: red;
+  color: white;
+}
+
+.cartItemActions .btn-danger:hover {
+  background-color: darkred;
+}
+
+.cartSummary {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.cartSummary h2 {
+  font-size: 24px;
+  color: darkslategray;
+  margin-bottom: 20px;
+}
+
+.cartSummary button {
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.cartSummary .btn-danger {
+  background-color: red;
+  color: white;
+}
+
+.cartSummary .btn-danger:hover {
+  background-color: darkred;
+}
+
+.cartSummary .btn-success {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.cartSummary .btn-success:hover {
+  background-color: royalblue;
+}
+
+.modal-content {
+  border-radius: 8px;
+}
+
+.modal-header {
+  background-color: gainsboro;
+  border-bottom: none;
+}
+
+.modal-title {
+  font-size: 20px;
+  color: darkslategray;
+}
+
+.modal-body {
+  font-size: 16px;
+  color: dimgray;
+}
+
+.modal-footer button {
+  font-size: 14px;
+  padding: 8px 15px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-footer .btn-secondary {
+  background-color: lightgray;
+  color: black;
+}
+
+.modal-footer .btn-secondary:hover {
+  background-color: gray;
+}
+
+.modal-footer .btn-danger {
+  background-color: red;
+  color: white;
+}
+
+.modal-footer .btn-danger:hover {
+  background-color: darkred;
+}
+
+@media (max-width: 750px) {
+  .cartItemImage {
+    height: 120px;
+  }
+
+  .cartContainer h1 {
+    font-size: 24px;
+  }
+
+  .cartSummary h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .cartItemImage {
+    height: 100px;
+  }
+
+  .cartSummary h2 {
+    font-size: 18px;
+  }
+
+  .cartSummary button {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+}

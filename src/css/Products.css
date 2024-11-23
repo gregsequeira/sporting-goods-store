@@ -1,0 +1,148 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: gainsboro;
+}
+
+.productGrid {
+  padding: 20px;
+}
+
+.categoryFilters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.categoryFilters button {
+  font-size: 14px;
+  padding: 8px 15px;
+  border: 1px solid snow;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.categoryFilters button.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.categorySection {
+  margin-bottom: 40px;
+}
+
+.categorySection h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: darkslategray;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.productCard {
+  border: 1px solid whitesmoke;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: white;
+}
+
+.productCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px black;
+}
+
+.productCard .cardImage {
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid gainsboro;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.productCard .cardBody {
+  padding: 15px;
+  text-align: center;
+}
+
+.productCard .cardTitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: darkslategray;
+}
+
+.productCard .cardText {
+  font-size: 14px;
+  color: dimgray;
+  margin-bottom: 10px;
+}
+
+.productCard .cardText strong {
+  color: dodgerblue;
+  font-size: 16px;
+}
+
+.productCard .dropdown-toggle {
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: snow;
+  border: 1px solid lightgray;
+  color: darkslategray;
+  text-align: left;
+}
+
+.productCard .dropdown-toggle:hover {
+  background-color: gainsboro;
+}
+
+.productCard .dropdown-menu {
+  width: 100%;
+  text-align: left;
+}
+
+.addToCartButton {
+  width: 100%;
+  background-color: green;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.addToCartButton:hover {
+  background-color: limegreen;
+}
+
+@media (max-width: 750px) {
+  .productCard .cardImage {
+    height: 150px;
+  }
+
+  .categorySection h2 {
+    font-size: 20px;
+  }
+
+  .categoryFilters {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 550px) {
+  .productCard .cardImage {
+    height: 120px;
+  }
+
+  .categoryFilters button {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .categorySection h2 {
+    font-size: 18px;
+  }
+}

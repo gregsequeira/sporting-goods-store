@@ -21,7 +21,7 @@ const LoginPage = () => {
       .required("Password is required"),
   });
 
-  const handleLogin = (values) => {
+  const handleLogin = (values, { setSubmitting }) => {
     const { username, password } = values;
 
     if (
@@ -29,6 +29,7 @@ const LoginPage = () => {
       userDetails.username === username &&
       userDetails.password === password
     ) {
+      // validate credentials
       dispatch(login(values));
       setWarning("");
       navigate("/home");

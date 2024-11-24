@@ -58,11 +58,16 @@ User-Friendly online SPorting Goods Supplies
 ```bash
 git clone https://github.com/gregsequeira/sporting-goods-store.git
 cd sporting-goods-store
+```
 
 2. **Install**
+
+```bash
 npm install
+```
 
 3. **Run Server**
-npm start
 
+```bash
+npm start
 ```

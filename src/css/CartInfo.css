@@ -1,0 +1,31 @@
+.cart-info {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: gainsboro;
+  border: 1px solid silver;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0px 4px 6px black;
+  z-index: 1000;
+  text-align: center;
+}
+
+.cart-info p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.cart-info button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.cart-info button:hover {
+  background-color: limegreen;
+}

@@ -38,6 +38,7 @@ export default function Cart() {
     setShowModal(true);
   };
 
+  // Avoid accidental clearing
   const confirmAction = () => {
     if (modalType === "clearCart") {
       dispatch(clearCart());
@@ -47,6 +48,7 @@ export default function Cart() {
     setShowModal(false);
   };
 
+  // In case user error
   const cancelAction = () => {
     if (modalType === "removeItem") {
       // Keep the last item in the cart
@@ -59,6 +61,16 @@ export default function Cart() {
   return (
     <div className="cartContainer">
       <h1>Your Cart</h1>
+
+      <div className="cartSummary">
+        <h2>Total Amount: R{totalAmount.toFixed(2)}</h2>
+        <Button variant="danger" onClick={handleClearCart}>
+          Clear Cart
+        </Button>
+        <Button variant="success" className="checkoutButton">
+          Proceed to Checkout
+        </Button>
+      </div>
 
       {cartItems.length > 0 ? (
         <>
@@ -120,16 +132,6 @@ export default function Cart() {
             ))}
           </Row>
 
-          <div className="cartSummary">
-            <h2>Total Amount: R{totalAmount.toFixed(2)}</h2>
-            <Button variant="danger" onClick={handleClearCart}>
-              Clear Cart
-            </Button>
-            <Button variant="success" className="checkoutButton">
-              Proceed to Checkout
-            </Button>
-          </div>
-
           {/* Shared Modal for Clear Cart and Remove Item */}
           <Modal show={showModal} onHide={cancelAction} centered>
             <Modal.Header closeButton>
@@ -153,7 +155,7 @@ export default function Cart() {
           </Modal>
         </>
       ) : (
-        <h3>Your cart is empty!</h3>
+        <h3>Your cart is empty</h3>
       )}
     </div>
   );

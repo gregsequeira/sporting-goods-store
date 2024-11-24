@@ -1,14 +1,16 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+// userSlice to save user details to log in
+
 const userSlice = createSlice({
   name: "user",
   initialState: {
-    userDetails: null, // Stores registered user details
-    isLoggedIn: false, // Tracks login status
+    userDetails: null,
+    isLoggedIn: false,
   },
   reducers: {
     register: (state, action) => {
-      state.userDetails = action.payload; // Save user details
+      state.userDetails = action.payload;
     },
     login: (state, action) => {
       const { username, password } = action.payload;

@@ -42,7 +42,7 @@ export default function Products() {
 
     if (!selectedOption) {
       setCurrentModalMessage(
-        "You must select an option before adding to cart."
+        "Please select an option before adding this item to your cart."
       );
       setShowModal(true);
       return;
@@ -62,7 +62,6 @@ export default function Products() {
   const categories = ["Soccer", "Cricket", "Rugby", "Tennis"];
 
   // Products can be viewed according to category
-
   const filteredProducts =
     selectedCategory === "All"
       ? products

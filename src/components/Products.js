@@ -127,12 +127,15 @@ export default function Products() {
                             ))}
                           </Dropdown.Menu>
                         </Dropdown>
+                        {/* Change Button on option selection */}
                         <Button
-                          variant="success"
+                          variant={
+                            selectedOptions[product.id] ? "primary" : "success"
+                          }
                           className="addToCartButton"
                           onClick={() => handleAddToCart(product)}
                         >
-                          Add to Cart
+                          {selectedOptions[product.id] ? "ADD TO CART" : "BUY"}
                         </Button>
                       </Card.Body>
                     </Card>
@@ -178,11 +181,13 @@ export default function Products() {
                       </Dropdown.Menu>
                     </Dropdown>
                     <Button
-                      variant="success"
+                      variant={
+                        selectedOptions[product.id] ? "primary" : "success"
+                      }
                       className="addToCartButton"
                       onClick={() => handleAddToCart(product)}
                     >
-                      Add to Cart
+                      {selectedOptions[product.id] ? "ADD TO CART" : "BUY"}
                     </Button>
                   </Card.Body>
                 </Card>

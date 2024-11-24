@@ -35,7 +35,11 @@ body {
 
 .categorySection h2 {
   font-size: 24px;
-  margin-bottom: 20px;
+  font-weight: bold;
+  background-color: limegreen;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
   color: darkslategray;
   text-transform: uppercase;
   text-align: center;
@@ -104,7 +108,6 @@ body {
 
 .addToCartButton {
   width: 100%;
-  background-color: green;
   border: none;
   padding: 10px;
   font-size: 14px;
@@ -114,35 +117,5 @@ body {
 }
 
 .addToCartButton:hover {
-  background-color: limegreen;
-}
-
-@media (max-width: 750px) {
-  .productCard .cardImage {
-    height: 150px;
-  }
-
-  .categorySection h2 {
-    font-size: 20px;
-  }
-
-  .categoryFilters {
-    flex-wrap: wrap;
-    gap: 5px;
-  }
-}
-
-@media (max-width: 550px) {
-  .productCard .cardImage {
-    height: 120px;
-  }
-
-  .categoryFilters button {
-    font-size: 12px;
-    padding: 5px 10px;
-  }
-
-  .categorySection h2 {
-    font-size: 18px;
-  }
+  opacity: 0.9;
 }

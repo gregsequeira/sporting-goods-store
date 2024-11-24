@@ -20,10 +20,10 @@ const CartInfo = () => {
   return (
     <div className="cart-info">
       <p>
-        <strong>Cart Summary:</strong>
+        <strong>Your Cart</strong>
       </p>
       <p>Items in Cart: {totalItems}</p>
-      <p>Total Cost: R{totalCost.toFixed(2)}</p>
+      <p className="cost">Total Cost: R{totalCost.toFixed(2)}</p>
       <button onClick={() => navigate("/cart")}>Go to Cart</button>
     </div>
   );

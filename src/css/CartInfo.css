@@ -29,3 +29,7 @@
 .cart-info button:hover {
   background-color: limegreen;
 }
+
+.cost {
+  font-weight: bold;
+}

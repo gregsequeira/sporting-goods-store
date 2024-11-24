@@ -1,0 +1,82 @@
+.checkoutPage {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: snow;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px black;
+}
+
+.checkoutPage h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: darkslategray;
+}
+
+.shippingOptions {
+  margin: 20px 0;
+  padding: 10px;
+  background-color: snow;
+  border-radius: 5px;
+  border: 1px solid silver;
+}
+
+.shippingOptions p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.shippingOptions div {
+  margin-top: 10px;
+}
+
+.shippingOptions label {
+  margin-left: 5px;
+  font-size: 14px;
+  color: darkslategray;
+}
+
+.checkoutButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.checkoutButtons button {
+  width: 48%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.infoButtonContainer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.infoButton {
+  font-size: 14px;
+  padding: 8px 12px;
+  background-color: royalblue;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.infoButton:hover {
+  background-color: royalblue;
+}
+
+.modal-header {
+  background-color: snow;
+}
+
+.modal-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.modal-footer button {
+  font-size: 14px;
+}

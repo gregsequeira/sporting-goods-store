@@ -131,11 +131,12 @@ export default function Checkout() {
         <Modal.Body>
           <div>
             <h5>Standard Shipping:</h5>
-            <p>Delivered within 5-7 business days.</p>
+            <p>Delivered to your door within 5-7 business days.</p>
             <br />
             <h5>Express Shipping:</h5>
             <p>
-              Delivered within 2-3 business days. Additional charges may apply.
+              Orders delivered within 2-3 business days. Additional charges may
+              apply.
             </p>
             <br />
             <p>

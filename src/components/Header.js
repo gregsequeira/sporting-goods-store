@@ -17,7 +17,6 @@ export default function Header() {
       <div className="headerLinks">
         <Link to="/">HOME</Link>
         <Link to="/products">PRODUCTS</Link>
-        <Link to="/about">ABOUT</Link>
         {isLoggedIn && <Link to="/cart">CART</Link>}
       </div>
       <div className="headerUserSection">
@@ -31,7 +30,7 @@ export default function Header() {
             </button>
           </>
         ) : (
-          <Link to="/">LOGIN</Link>
+          <Link to="/login">LOGIN</Link>
         )}
       </div>
     </nav>

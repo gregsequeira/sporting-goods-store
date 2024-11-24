@@ -38,7 +38,7 @@ const RegistrationForm = () => {
   // Form submission handler
   const handleRegistration = (values) => {
     dispatch(register(values));
-    navigate("/");
+    navigate("/login");
   };
 
   return (

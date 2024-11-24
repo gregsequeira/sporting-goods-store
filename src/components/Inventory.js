@@ -1,12 +1,13 @@
 const products = [
   {
     id: 1,
-    name: "Soccer Ball",
-    price: "525.00",
-    description: "Premium quality soccer ball for all conditions.",
-    category: "Soccer",
-    options: ["Size 4", "Size 5"],
-    image: "/images/soccerball.jpg",
+    name: "Tennis Shoes",
+    price: "890.00",
+    description:
+      "Best selection for your game. Breathable material, high grip soles.",
+    category: "Tennis",
+    options: ["Size 7", "Size 8", "Size 9", "Size 10"],
+    image: "/images/tennisshoes.jpeg",
   },
   {
     id: 2,
@@ -96,13 +97,12 @@ const products = [
   },
   {
     id: 11,
-    name: "Tennis Shoes",
-    price: "890.00",
-    description:
-      "Best selection for your game. Breathable material, high grip soles.",
-    category: "Tennis",
-    options: ["Size 7", "Size 8", "Size 9", "Size 10"],
-    image: "/images/tennisshoes.jpeg",
+    name: "Soccer Ball",
+    price: "525.00",
+    description: "Premium quality soccer ball for all conditions.",
+    category: "Soccer",
+    options: ["Size 4", "Size 5"],
+    image: "/images/soccerball.jpg",
   },
   {
     id: 12,

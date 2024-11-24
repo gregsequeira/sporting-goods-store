@@ -56,7 +56,7 @@ export default function Products() {
 
   const handleLoginRedirect = () => {
     setShowModal(false);
-    navigate("/");
+    navigate("/login");
   };
 
   const categories = ["Soccer", "Cricket", "Rugby", "Tennis"];

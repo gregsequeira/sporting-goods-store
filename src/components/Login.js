@@ -20,8 +20,8 @@ const LoginPage = () => {
       .min(8, "Password must be at least 8 characters")
       .required("Password is required"),
   });
-
-  const handleLogin = (values, { setSubmitting }) => {
+  // validate credentials
+  const handleLogin = (values) => {
     const { username, password } = values;
 
     if (
@@ -29,10 +29,9 @@ const LoginPage = () => {
       userDetails.username === username &&
       userDetails.password === password
     ) {
-      // validate credentials
       dispatch(login(values));
       setWarning("");
-      navigate("/home");
+      navigate("/products");
     } else {
       setWarning("Invalid username or password");
     }

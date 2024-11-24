@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import { Button, Card, Col, Row, Modal } from "react-bootstrap";
 import { removeFromCart, updateQuantity, clearCart } from "../store/cartSlice";
 import "../css/Cart.css";
@@ -8,6 +9,7 @@ export default function Cart() {
   const dispatch = useDispatch();
   const cartItems = useSelector((state) => state.cart.items);
   const totalAmount = useSelector((state) => state.cart.totalAmount);
+  const navigate = useNavigate();
 
   const [showModal, setShowModal] = useState(false);
   // option to clear cart or remove item
@@ -67,7 +69,11 @@ export default function Cart() {
         <Button variant="danger" onClick={handleClearCart}>
           Clear Cart
         </Button>
-        <Button variant="success" className="checkoutButton">
+        <Button
+          onClick={() => navigate("/checkout")}
+          variant="success"
+          className="checkoutButton"
+        >
           Proceed to Checkout
         </Button>
       </div>

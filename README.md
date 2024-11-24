@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+## Pepe's Sporting Goods Store
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+User-Friendly online SPorting Goods Supplies
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## How to Use
 
-### `npm start`
+-**Home Page:**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Displays featured product images.
+- Login button to allow user to begin shopping
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+-**Login:**
 
-### `npm test`
+- User should be registered to purchse products
+- Input for user name and password
+- Link to register if user is not yet registered
+- Verified users redirected to Products page on login
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-**Registration:**
 
-### `npm run build`
+- New users fill out relevant details for registration
+- Username required for login
+- Repeat password for authrntication
+- Once registered, the user is redirected back to login to enter details
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-**Products:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Categorised inventory with images, description and cost per item
+- User must select an item in order to add an item to the Cart
+- When items are added to the cart, total items and total cost displayed in fixed box with link to Cart
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-**Cart:**
 
-### `npm run eject`
+- Cart displays all items user has selected for purchase as well as total items and cost
+- Buttons to return to Prducts and continue shopping if user is not ready for check out
+- Item quantities can be increased or decreased with easy-to-use buttons
+- If items are reduced to zero, user is prompted before removal of item
+- Button to to proceed to check out when ready
+- Option to clear cart with error check
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+-**Check Out:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Checkout displays total items and cost
+- Radio buttons to select shipping method
+- User must select a shipping method in order to confirm the order
+- Option to return to Cart
+- Shipping Methods help button displays info about shipping
+- Final confirmation before submititng order. Cart is cleared and user returns to Home page
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Installation
 
-## Learn More
+1. **Clone Repository**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+git clone https://github.com/gregsequeira/sporting-goods-store.git
+cd sporting-goods-store
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. **Install**
+npm install
 
-### Code Splitting
+3. **Run Server**
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
